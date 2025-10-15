@@ -34,9 +34,9 @@ let cactus2Img;
 let cactus3Img;
 
 //gerak
-let velocityX = -5; //cactus gerak ke kiri
+let velocityX = -7; //cactus gerak ke kiri
 let velocityY = 0;
-let gravity = 0.3; //dino gaya gravitasi
+let gravity = 0.5; //dino gaya gravitasi
 
 let gameOver = false; //kalah=berhenti
 let gameStarted = false; //status game
@@ -137,7 +137,7 @@ function moveDino(e) {
 
     else if ((e.code == "Space" || e.code == "ArrowUp") && dino.y == dinoY) { //player(keyboard)
         //jump
-        velocityY = -10; //kecepatan lompat
+        velocityY = -13; //kecepatan lompat
     }
 }
 
